@@ -10,18 +10,29 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    
     "dayjs": "^1.9.7",
+    
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "8.4.1",
     "vuepress": "1.9.2",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.9.4",
     "yamljs": "^0.3.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "esm": "3.0.0",
+    "chalk": "2.0.0",
+    "commander": "2.0.0"
+  }
 }

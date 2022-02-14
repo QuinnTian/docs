@@ -4,6 +4,7 @@ const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
 
+
   theme: 'vdoing', // 使用依赖包主题
   // theme: require.resolve('../../vdoing'), // 使用本地主题
 
@@ -15,8 +16,8 @@ module.exports = {
     ['meta', { name: 'keywords', content: '北纬36度文档站,北纬36度,知识库,QuinnTian,Java,JavaScript' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
 
-    ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
-    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
+    //['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
+    //['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ],
 
   // 主题配置
@@ -26,38 +27,39 @@ module.exports = {
       {
         text: '前端', link: '/null', items: [
           { text: '构建中', link: '/null' },
-          
-        
+
+
         ]
       },
       {
         text: '后端', link: '/null', items: [
           { text: '构建中', link: '/null' },
-          
-        
+
+
         ]
       },
       {
         text: '运维', items: [
           { text: 'Linux', link: '/pages/341a86/' },
-          
+
         ]
       },
       {
         text: '博客', items: [
           { text: "Hexo站", link: "https://hexo.quinntian.com", target: '_blank' },
           { text: "Halo站", link: "https://halo.quinntian.com", target: '_blank' },
-          
+
         ]
       },
-      { text: '其他' , items: [
-        { text: 'English Grammer', link: '/pages/7d13d5/' },
-        
-      ]
-      
-    },
-      
-      
+      {
+        text: '其他', items: [
+          { text: 'English Grammer', link: '/pages/7d13d5/' },
+
+        ]
+
+      },
+
+
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     //logo: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png', // 导航栏logo
@@ -130,6 +132,11 @@ module.exports = {
 
   // 插件
   plugins: [
+
+    ['sitemap', { 
+      hostname: 'https://pake.web.id/', }
+    ],
+
     // [require('./plugins/love-me'), { // 鼠标点击爱心特效
     //   color: '#11a8cd', // 爱心颜色，默认随机色
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
