@@ -134,7 +134,7 @@ module.exports = {
   plugins: [
 
     ['sitemap', { 
-      hostname: 'https://pake.web.id/', }
+      hostname: 'https://doc.quinntian.com', }
     ],
 
     // [require('./plugins/love-me'), { // 鼠标点击爱心特效
