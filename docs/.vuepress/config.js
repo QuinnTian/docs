@@ -15,7 +15,7 @@ module.exports = {
     ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/QuinnTian/imgchr/blog-imgs/googledocs_94038.png' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '北纬36度文档站,北纬36度,知识库,QuinnTian,Java,JavaScript' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-
+    
     //['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
     //['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ],
@@ -138,6 +138,12 @@ module.exports = {
 
   // 插件
   plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'G-C0KKS5FFPK' // UA-00000000-0
+      }
+    ],
 
     ['sitemap', { 
       hostname: 'https://docs.quinntian.com',
