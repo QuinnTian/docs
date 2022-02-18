@@ -140,7 +140,8 @@ module.exports = {
   plugins: [
 
     ['sitemap', { 
-      hostname: 'https://docs.quinntian.com', }
+      hostname: 'https://docs.quinntian.com',
+      changefreq: 'always' }
     ],
 
     // [require('./plugins/love-me'), { // 鼠标点击爱心特效
