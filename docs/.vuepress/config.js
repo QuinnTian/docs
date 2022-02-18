@@ -22,6 +22,12 @@ module.exports = {
 
   // 主题配置
   themeConfig: {
+    algolia: {
+      apiKey: '35d79fb2f8ff241599637d3af91428c8',
+      indexName: 'quinntian',
+      // If Algolia did not provided you any `appId`, use `BH4D9OD16A` or remove this option
+      appId: 'BAMIG1SR28'
+    },
     nav: [
       { text: '首页', link: '/' },
       {
@@ -142,7 +148,7 @@ module.exports = {
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // }],
 
-    ['fulltext-search'], // 全文搜索
+    //['fulltext-search'], // 全文搜索
 
     // ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
     //   thirdparty: [ // 可选，默认 []
